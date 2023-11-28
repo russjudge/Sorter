@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>RussJudge.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>RussJudge.$(AssemblyName)</PackageId>
+    <Title>RussJudge Sorter</Title>
+    <Authors>Russ Judge</Authors>
+    <Product>RussJudge.$(AssemblyName)</Product>
+    <Description>Simple WPF library for sorting columns of a ListView.</Description>
+    <Copyright>Copyright (c) 2023</Copyright>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+</Project>
