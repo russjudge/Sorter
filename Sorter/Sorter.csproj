@@ -14,6 +14,8 @@
     <Description>Simple WPF library for sorting columns of a ListView.</Description>
     <Copyright>Copyright (c) 2023</Copyright>
     <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/russjudge/Sorter</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/russjudge/Sorter</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
