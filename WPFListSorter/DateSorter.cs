@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.ComponentModel;
 
-namespace RussJudge.Sorter
+namespace RussJudge.WPFListSorter
 {
     internal class DateSorter : IComparer
     {

@@ -7,7 +7,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Media;
 
-namespace RussJudge.Sorter
+namespace RussJudge.WPFListSorter
 {
     public static class Sorter
     {
@@ -265,7 +265,6 @@ namespace RussJudge.Sorter
                     if (p.Name.Equals(field, StringComparison.InvariantCultureIgnoreCase) || !searchOnCurrentSortColumnOnly)
                     {
                         matchProperties.Add(p);
-                        break;
                     }
                 }
                 if (matchProperties.Count > 0 && CollectionViewSource.GetDefaultView(element.ItemsSource) is ICollectionView dataView)

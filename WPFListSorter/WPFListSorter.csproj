@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+	  
+	  <RootNamespace>RussJudge.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <PackageId>RussJudge.$(AssemblyName)</PackageId>
+	  <Title>RussJudge WPF List Sorter</Title>
+	  <Authors>Russ Judge</Authors>
+	  <Product>RussJudge.$(AssemblyName)</Product>
+	  <Description>Simple WPF library for sorting columns of a ListView.</Description>
+	  <Copyright>Copyright (c) Russ Judge 2023</Copyright>
+	  <RepositoryType>git</RepositoryType>
+	  <PackageProjectUrl>https://russjudge.com</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/russjudge/Sorter</RepositoryUrl>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <ApplicationIcon>rjicon.ico</ApplicationIcon>
+	  <PackageIcon>rjicon2.png</PackageIcon>
+	  <PackageTags>WPF; sort; ListView sort;</PackageTags>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	  <IncludeSymbols>True</IncludeSymbols>
+	  <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="rjicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="rjicon2.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

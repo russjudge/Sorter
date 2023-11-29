@@ -3,7 +3,7 @@ using System.Windows.Controls;
 using System.Windows.Documents;
 using System.Windows.Media;
 
-namespace RussJudge.Sorter
+namespace RussJudge.WPFListSorter
 {
     internal class SortAdorner : Adorner
     {
