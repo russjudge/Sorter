@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Example"
-        xmlns:sorter="clr-namespace:RussJudge.WPFListSorter;assembly=WPFListSorter"
+        xmlns:sorter="clr-namespace:RussJudge.WPFListSorter;assembly=RussJudge.WPFListSorter"
         mc:Ignorable="d"
         Title="WPF List Sorter Demonstration" Height="250" Width="400">
     <DockPanel>

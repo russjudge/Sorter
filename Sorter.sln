@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example", "Example\Example.csproj", "{8897F8FD-844B-4783-A2AF-77A3992FAD6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFListSorter", "WPFListSorter\WPFListSorter.csproj", "{BC3A867D-69CE-4A9E-BE0C-78C859BD9CD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RussJudge.WPFListSorter", "WPFListSorter\RussJudge.WPFListSorter.csproj", "{BC3A867D-69CE-4A9E-BE0C-78C859BD9CD0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EB366523-5597-4147-B803-78B7E66D4875}"
 	ProjectSection(SolutionItems) = preProject
