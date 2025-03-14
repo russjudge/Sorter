@@ -439,11 +439,7 @@ namespace RussJudge.WPFListSorter
                                 if (p.Name.Equals(field, StringComparison.InvariantCultureIgnoreCase))
                                 {
                                     Type ptype = p.PropertyType;
-                                    if (ptype == typeof(DateTime))
-                                    {
-                                        sorter = new DateSorter(newDir);
-                                    }
-                                    else if (ptype == typeof(IComparable))
+                                    if (ptype == typeof(IComparable))
                                     {
                                         sorter = new ComparableSorter(newDir);
                                     }

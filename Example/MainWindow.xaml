@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:Example"
         xmlns:sorter="clr-namespace:RussJudge.WPFListSorter;assembly=RussJudge.WPFListSorter"
         mc:Ignorable="d"
-        Title="WPF List Sorter Demonstration" Height="250" Width="400">
+        Title="WPF List Sorter Demonstration" Height="250" Width="670">
     <DockPanel>
         <DockPanel DockPanel.Dock="Top">
-         
+
             <TextBlock VerticalAlignment="Center"  Padding="150,0,5,0" Text="Find:" FontWeight="Bold" />
             <Button
                 IsDefault="True"
@@ -18,59 +18,103 @@
                 Content="Search" Click="OnSearch"/>
             <TextBox VerticalAlignment="Center"  Name="SearchText" />
         </DockPanel>
-    <ListView
+        <ListView
         Name="TheListView"
         ItemsSource="{Binding Mode=OneTime}">
-        <ListView.View>
-            <GridView>
-                <GridViewColumn Width="100">
-                    <GridViewColumnHeader
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="100">
+                        <GridViewColumnHeader
                         sorter:Sorter.IsDefault="True"
                         sorter:Sorter.SortColumnID="Key"
                         ToolTip="Click to sort"
                         />
 
-                    <GridViewColumn.HeaderTemplate>
-                        <DataTemplate>
-                            <StackPanel>
-                                <TextBlock
+                        <GridViewColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock
                                     ToolTip="Click to sort" HorizontalAlignment="Center"
                                     FontWeight="Bold"
                                     Text="Key" />
-                            </StackPanel>
-                        </DataTemplate>
-                    </GridViewColumn.HeaderTemplate>
-                    <GridViewColumn.CellTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding Path=Key, Mode=OneWay}" />
-                        </DataTemplate>
-                    </GridViewColumn.CellTemplate>
-                </GridViewColumn>
-                <GridViewColumn Width="250">
-                    <GridViewColumnHeader
+                                </StackPanel>
+                            </DataTemplate>
+                        </GridViewColumn.HeaderTemplate>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=Key, Mode=OneWay}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="150">
+                        <GridViewColumnHeader
+                        sorter:Sorter.SortColumnID="When"
+                        ToolTip="Click to sort"
+                        />
+
+                        <GridViewColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock
+                                    ToolTip="Click to sort" HorizontalAlignment="Center"
+                                    FontWeight="Bold"
+                                    Text="When" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </GridViewColumn.HeaderTemplate>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=When, Mode=OneWay}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="90">
+                        <GridViewColumnHeader
+                        sorter:Sorter.SortColumnID="Number"
+                        ToolTip="Click to sort"
+                        />
+
+                        <GridViewColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock
+                                    ToolTip="Click to sort" HorizontalAlignment="Center"
+                                    FontWeight="Bold"
+                                    Text="Number" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </GridViewColumn.HeaderTemplate>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock HorizontalAlignment="Right" Text="{Binding Path=Number, Mode=OneWay}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="250">
+                        <GridViewColumnHeader
                         sorter:Sorter.SortColumnID="Value"
                         ToolTip="Click to sort"
                         />
 
-                    <GridViewColumn.HeaderTemplate>
-                        <DataTemplate>
-                            <StackPanel>
-                                <TextBlock
+                        <GridViewColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock
                                     ToolTip="Click to sort" HorizontalAlignment="Center"
                                     FontWeight="Bold"
                                     Text="Value" />
-                            </StackPanel>
-                        </DataTemplate>
-                    </GridViewColumn.HeaderTemplate>
-                    <GridViewColumn.CellTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding Path=Value, Mode=OneWay}" />
-                        </DataTemplate>
-                    </GridViewColumn.CellTemplate>
-                </GridViewColumn>
-            </GridView>
-        </ListView.View>
+                                </StackPanel>
+                            </DataTemplate>
+                        </GridViewColumn.HeaderTemplate>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=Value, Mode=OneWay}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
 
-    </ListView>
+        </ListView>
     </DockPanel>
 </Window>

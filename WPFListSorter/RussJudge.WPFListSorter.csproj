@@ -23,14 +23,11 @@
     <PackageTags>WPF; sort; ListView sort;</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <VersionPrefix>1.1.0</VersionPrefix>
-    <AssemblyVersion>1.1.0.0</AssemblyVersion>
-    <FileVersion>1.1.0.0</FileVersion>
+    <VersionPrefix>1.1.1</VersionPrefix>
+    <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <FileVersion>1.1.1.0</FileVersion>
     <PackageReleaseNotes>
-      Changed result assembly filename from WPFListSorter to RussJudge.WPFListSorter.
-      This will require updating your XAML to reflect this change:
-      From: xmlns:sorter="clr-namespace:RussJudge.WPFListSorter;assembly=WPFListSorter"
-      To:  xmlns:sorter="clr-namespace:RussJudge.WPFListSorter;assembly=RussJudge.WPFListSorter"
+      Bug fix to date sorting.
     </PackageReleaseNotes>
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
